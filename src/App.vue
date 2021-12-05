@@ -1,19 +1,22 @@
 <template>
   <div id="app" dir="rtl">
-    <CustomHeader></CustomHeader>
+    <CustomHeader />
 
     <router-view />
         
+    <CustomFooter />
   </div>
 </template>
 
 <script>
 import CustomHeader from './components/header/Header.vue'
+import CustomFooter from './components/footer/footer.vue'
 
 export default {
   name: 'App',
   components: {
-    CustomHeader
+    CustomHeader,
+    CustomFooter
   }
 }
 </script>

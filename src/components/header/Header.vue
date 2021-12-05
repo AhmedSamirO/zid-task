@@ -73,11 +73,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '@/app.scss';
-  
-  .header {
-    background-color: $primary;
-  }
   ::v-deep {
     .navbar-nav {
       width: 100%;
