@@ -41,7 +41,7 @@ export default {
     font-size: 18px !important;
     font-weight: 700 !important;
     color: $gold !important;
-    width: 300px;
+    width: 280px;
     height: 60px;
     padding-top: 15px !important;
     

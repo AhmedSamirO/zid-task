@@ -25,7 +25,7 @@
           </h1>
         </b-col>
         
-        <b-col cols="7" class="text my-4">
+        <b-col lg="7" md="10" cols="11" class="text my-4">
           <p>
             طور متجرك ووسع افاق تجارتك مع سوق تطبيقات زد التى تساعدك فى نمو ارباحك عبر ادارةعمليات متجرك بشكل فعال واحترافى
           </p>
@@ -81,7 +81,11 @@
             <ViewAppsButton />
           </div>
         </b-col>
-        <b-col lg="7" cols="10" class="pl-5 pr-0 videoContainer section2VideoContainer">
+        <b-col 
+          lg="7" 
+          cols="10" 
+          class="pl-lg-5 pr-0 videoContainer section2VideoContainer"
+        >
           <GIFComponent :smallComponent="true" />
         </b-col>
       </b-row>
@@ -141,105 +145,127 @@
 
   .landingPage {
     padding-top: 70px;
-  }
   
-  .arrowUp {
-    position: fixed;
-    left: 30px;
-    bottom: 20px;
-    z-index: 9999;
-  }
-  .chatContainer {
-    position: fixed;
-    right: 30px;
-    bottom: 20px;
-    background-color: $gold;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    padding-top: 10px;
-    z-index: 9999;
-  }
-  
-  h1 {
-    font-weight: 700 !important;
-    font-size: 36px;
-    color: $primary;
-  }
-  
-  .text {
-    font-weight: 400 !important;
-    font-size: 18px;
-    line-height: 34px;
-    color: $black;
-  }
-  
-  .viewAppsButtonContainer {
-    margin-bottom: 40px;
-  }
-  
-  .videoContainer{
-    position: relative;
-    margin-bottom: 200px;
-  }
-  
-  .section2 {
-    background-color: #E5E5E5;
-    margin-bottom: 190px;
-    padding-bottom: 65px;
+    .arrowUp {
+      position: fixed;
+      left: 30px;
+      bottom: 20px;
+      z-index: 9999;
+    }
+    .chatContainer {
+      position: fixed;
+      right: 30px;
+      bottom: 20px;
+      background-color: $gold;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      padding-top: 10px;
+      z-index: 9999;
+    }
     
-    .header {
+    h1 {
       font-weight: 700 !important;
-      font-size: 24px;
+      font-size: 36px;
       color: $primary;
-      margin-bottom: 20px;
-      padding-top: 65px;
-      letter-spacing: -1px;
     }
     
-    .subheader {
+    .text {
       font-weight: 400 !important;
-      font-size: 16px;
-      line-height: 24px;
+      font-size: 18px;
+      line-height: 34px;
       color: $black;
-      margin-bottom: 20px;
-    }
-    .advanages {
-      font-weight: 600 !important;
-      font-size: 14px;
-      line-height: 24px;
-      color: $black;
-      margin-bottom: 10px;
-    }
-    .smallAdvanage {
-      font-size: 12px;
-    }
-    .section2VideoContainer {
-      margin-top: 20px;
-      margin-bottom: 0;
     }
     
-    @media (max-width: 992px) {
-      justify-content: center;
-    }
-  }
-  
-  .section3 {
-    .header {
-      font-weight: 600 !important;
-      font-size: 24px;
-      letter-spacing: -1px;
-      margin-bottom: 0;
-    }
-    .subheader {
-      font-weight: 400 !important;
-      font-size: 14px;
-      line-height: 24px;
+    .viewAppsButtonContainer {
       margin-bottom: 40px;
     }
-    .allApps {
-      margin-top: 40px;
-      margin-bottom: 100px;
+    
+    .videoContainer{
+      position: relative;
+      margin-bottom: 200px;
+    }
+    
+    .section2 {
+      background-color: #E5E5E5;
+      margin-bottom: 190px;
+      padding-bottom: 65px;
+      
+      .header {
+        font-weight: 700 !important;
+        font-size: 24px;
+        color: $primary;
+        margin-bottom: 20px;
+        padding-top: 65px;
+        letter-spacing: -1px;
+      }
+      
+      .subheader {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: $black;
+        margin-bottom: 20px;
+      }
+      .advanages {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        color: $black;
+        margin-bottom: 10px;
+      }
+      .smallAdvanage {
+        font-size: 12px;
+      }
+      .section2VideoContainer {
+        margin-top: 20px;
+        margin-bottom: 0;
+      }
+      
+      @media (max-width: 992px) {
+        justify-content: center;
+      }
+    }
+    
+    .section3 {
+      .header {
+        font-weight: 600 !important;
+        font-size: 24px;
+        letter-spacing: -1px;
+        margin-bottom: 0;
+      }
+      .subheader {
+        font-weight: 400 !important;
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 40px;
+      }
+      .allApps {
+        margin-top: 40px;
+        margin-bottom: 100px;
+      }
+    }
+    
+    @media (max-width: 575px) {
+      h1 {
+        font-size: 24px;
+        line-height: 36px;
+      }
+      .text {
+        font-size: 14px;
+        line-height: 26px;
+      }
+      .section2 {
+        .header {
+          font-size: 18px;
+        }
+        .subheader {
+          font-size: 15px;
+        }
+        .advanages {
+          font-size: 10px;
+        }
+      }
     }
   }
 </style>
