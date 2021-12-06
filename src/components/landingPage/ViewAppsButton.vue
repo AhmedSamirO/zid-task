@@ -1,5 +1,5 @@
 <template>
-  <b-button class="viewAppsButton" :variant="variant">
+  <b-button class="viewAppsButton" :variant="variant" @click="goToApps">
     {{text}} 
     <div class="arrowContainer">        
       <b-img 
@@ -24,6 +24,11 @@ export default {
     variant: {
       type: String,
       default: 'primary'
+    }
+  },
+  methods: {
+    goToApps() {
+      this.$router.push("/apps");
     }
   }
 }

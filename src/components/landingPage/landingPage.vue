@@ -2,6 +2,7 @@
   <div class="landingPage">
     <div class="container-fluid">
       <b-img 
+        v-if="isUpArrowViewed"
         :src="require(`@/assets/icons/arrow-up.svg`)"
         width="30"
         height="30"
@@ -115,7 +116,23 @@
   
   export default {
     name: 'LandingPage',
-    components: { ViewAppsButton, GIFComponent, AppComponent }
+    components: { ViewAppsButton, GIFComponent, AppComponent },
+    data: function () {
+      return {
+        isUpArrowViewed: false
+      }
+    },
+    methods: {
+      handleScroll () {
+        this.isUpArrowViewed = window.scrollY > 0;
+      }
+    },
+    created () {
+      window.addEventListener('scroll', this.handleScroll);
+    },
+    destroyed () { 
+      window.removeEventListener('resize', this.onResize); 
+    }
   }
 </script>
 
