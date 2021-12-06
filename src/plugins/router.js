@@ -1,39 +1,15 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import LandingPage from '../components/landingPage/landingPage.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
-  /*
-  {
-    path: '/insuranceOffers',
-    name: 'InsuranceOffers',
-    component: '',
-    children: [
-      {
-        path: 'summary/:index/:lang?',
-        name: 'summary',
-        component: '',
-        props: true,
-        meta: {
-          breadcrumb: ''
-        }
-      },
-      {
-        path: '',
-        component: '',
-        meta: {
-          breadcrumb: ''
-        }
-      }
-    ]
-  },
   {
     path: '/',
     name: 'landingPage',
-    component: '',
+    component: LandingPage
   }
-  */
 ]
 
 const router = new VueRouter({

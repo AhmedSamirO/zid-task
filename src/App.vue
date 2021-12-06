@@ -71,6 +71,9 @@ export default {
   
   * {
     font-family: 'Cairo', sans-serif !important;
-    font-weight: 300 !important;
+  }
+  
+  .text-start {
+    text-align: start !important;
   }
 </style>

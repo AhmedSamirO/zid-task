@@ -1,16 +1,16 @@
 <template>
-  <b-navbar toggleable="lg" class="w-100">
+  <b-navbar toggleable="lg" class="py-0">
     <div class="container">
       <b-row class="justify-center w-100">
-        <b-col lg="2" cols="2">
+        <b-col lg="2" cols="2" class="py-0">
           <b-navbar-brand href="/">
               <div class="logo">
                 <img
                   class=""
-                  src="https://zid.sa/wp-content/themes/zid2020/images/zid-logo.png"
+                  :src="require(`@/assets/imgs/zid-logo.png`)"
                   alt="zid-logo"
-                  width="100px"
-                  height="40px"
+                  width="110px"
+                  height="47px"
                 />
               </div>
             </b-navbar-brand>
@@ -73,17 +73,22 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @import '@/app.scss';
+
   ::v-deep {
+    .navbar-brand {
+      padding-top: 0;
+    }
+    
     .navbar-nav {
       width: 100%;
       padding: 0;
       
       .nav-link {
-        font-size: 18px !important;
-        font-weight: 600 !important;
-        color: black!important;
-        padding-top: 0;
-        padding-bottom: 0;
+        font-size: 16px !important;
+        font-weight: 400 !important;
+        color: $black !important;
+        padding-top: 5px;
       }
     }
   }
