@@ -1,6 +1,6 @@
 <template>
-  <b-button class="viewAppsButton" variant="primary">
-    تصفح التطبيقات 
+  <b-button class="viewAppsButton" :variant="variant">
+    {{text}} 
     <div class="arrowContainer">        
       <b-img 
         :src="require(`@/assets/icons/left-arrow.svg`)"
@@ -15,7 +15,17 @@
 
 <script>
 export default {
-  name: 'ViewAppsButton'
+  name: 'ViewAppsButton',
+  props: {
+    text: {
+      type: String,
+      default: 'تصفح التطبيقات'
+    },
+    variant: {
+      type: String,
+      default: 'primary'
+    }
+  }
 }
 </script>
 

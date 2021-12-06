@@ -76,4 +76,8 @@ export default {
   .text-start {
     text-align: start !important;
   }
+  body,
+  html {
+    overflow-x: hidden;
+  }
 </style>
