@@ -85,8 +85,8 @@ export default {
       padding: 0;
       
       .nav-link {
-        font-size: 16px !important;
-        font-weight: 400 !important;
+        font-size: 16px;
+        font-weight: 400;
         color: $black !important;
         padding-top: 5px;
       }

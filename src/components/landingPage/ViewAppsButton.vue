@@ -1,11 +1,13 @@
 <template>
   <b-button class="viewAppsButton" :variant="variant" @click="goToApps">
-    {{text}} 
+    <div class="buttonText">
+      {{text}} 
+    </div>
     <div class="arrowContainer">        
       <b-img 
         :src="require(`@/assets/icons/left-arrow.svg`)"
-        width="25"
-        height="25"
+        width="30"
+        height="30"
         class="arrow"
       >
       </b-img>
@@ -43,25 +45,28 @@ export default {
     color: $gold !important;
     width: 280px;
     height: 60px;
-    padding-top: 15px !important;
     
+    .buttonText {
+      padding-top: 9px;
+      display: inline-block;
+    }
     :hover {
       color: $gold;
     } 
   }
   @keyframes example {
     from {
-      width: 25px;
-      height: 25px;
-    }
-    to {
       width: 30px;
       height: 30px;
     }
+    to {
+      width: 35px;
+      height: 35px;
+    }
   }
   .arrowContainer{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     display: inline-block;
   }
   .arrow {

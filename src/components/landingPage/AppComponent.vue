@@ -53,7 +53,7 @@
     text-align: start;
     
     .title {
-      font-weight: 600 !important;
+      font-weight: 600;
       font-size: 16px;
       color: $primary;
       margin-bottom: 0;
@@ -68,7 +68,7 @@
       }
     }
     .subTitle {
-      font-weight: 400 !important;
+      font-weight: 400;
       font-size: 10px;
       color: $black;
       margin-bottom: 20px;
@@ -78,7 +78,7 @@
       color: rgba(0, 0, 0, 0.56);
     }
     .appText {
-      font-weight: 400 !important;
+      font-weight: 400;
       font-size: 10px;
       color: $black;
       margin-bottom: 20px;

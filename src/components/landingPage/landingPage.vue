@@ -165,13 +165,13 @@
     }
     
     h1 {
-      font-weight: 700 !important;
+      font-weight: 700;
       font-size: 36px;
       color: $primary;
     }
     
     .text {
-      font-weight: 400 !important;
+      font-weight: 400;
       font-size: 18px;
       line-height: 34px;
       color: $black;
@@ -192,7 +192,7 @@
       padding-bottom: 65px;
       
       .header {
-        font-weight: 700 !important;
+        font-weight: 700;
         font-size: 24px;
         color: $primary;
         margin-bottom: 20px;
@@ -229,13 +229,13 @@
     
     .section3 {
       .header {
-        font-weight: 600 !important;
+        font-weight: 600;
         font-size: 24px;
         letter-spacing: -1px;
         margin-bottom: 0;
       }
       .subheader {
-        font-weight: 400 !important;
+        font-weight: 400;
         font-size: 14px;
         line-height: 24px;
         margin-bottom: 40px;
