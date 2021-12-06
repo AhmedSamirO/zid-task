@@ -1,5 +1,9 @@
 <template>
-  <b-button class="viewAppsButton" :variant="variant" @click="goToApps">
+  <b-button 
+    :class="[{'lightButton': lightText}, 'viewAppsButton']" 
+    :variant="variant" 
+    @click="goToApps"
+  >
     <div class="buttonText">
       {{text}} 
     </div>
@@ -26,6 +30,10 @@ export default {
     variant: {
       type: String,
       default: 'primary'
+    },
+    lightText: {
+      type: Boolean,
+      default: false
     }
   },
   methods: {
@@ -38,13 +46,18 @@ export default {
 
 <style lang="scss" scoped>
   @import '@/app.scss';
-
+  
   .viewAppsButton {
     font-size: 18px !important;
     font-weight: 700 !important;
     color: $gold !important;
     width: 280px;
     height: 60px;
+    
+    &.lightButton {
+      font-size: 16px !important;
+      font-weight: 600 !important;
+    }
     
     .buttonText {
       padding-top: 9px;

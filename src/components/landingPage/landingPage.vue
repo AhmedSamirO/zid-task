@@ -106,7 +106,7 @@
           <AppComponent />
         </b-col>
         <b-col cols="12 allApps">
-          <ViewAppsButton text="جميع التطبيقات" variant="white" />
+          <ViewAppsButton text="جميع التطبيقات" variant="white" :lightText="true" />
         </b-col>
       </b-row>
     </div>
