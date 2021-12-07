@@ -191,7 +191,7 @@
     }
     
     .section2 {
-      background-color: #E5E5E5;
+      background-color: #FAFAFC;
       margin-bottom: 190px;
       padding-bottom: 65px;
       

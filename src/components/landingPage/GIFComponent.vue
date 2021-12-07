@@ -49,7 +49,7 @@
   
   .gifContainer {
     position: relative;
-    max-width: 850px;
+    max-width: 950px;
 
     .dots {
       position: absolute;
@@ -79,9 +79,9 @@
       overflow: hidden;
       margin: auto;
       z-index: 100;
-      max-height: 500px;
+      max-height: 550px;
       height: 100%;
-      max-width: 700px;
+      max-width: 846px;
       width: 100%;
     }
     
