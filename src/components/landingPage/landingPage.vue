@@ -26,8 +26,11 @@
         </b-col>
         
         <b-col lg="7" md="10" cols="11" class="text my-4">
+          <p class="mb-0">
+            طور متجرك ووسع افاق تجارتك مع سوق تطبيقات زد التى تساعدك 
+          </p>
           <p>
-            طور متجرك ووسع افاق تجارتك مع سوق تطبيقات زد التى تساعدك فى نمو ارباحك عبر ادارةعمليات متجرك بشكل فعال واحترافى
+            فى نمو ارباحك عبر ادارةعمليات متجرك بشكل فعال واحترافى
           </p>
         </b-col>
         
@@ -36,16 +39,16 @@
         </b-col>
         
         <b-col cols="10" class="videoContainer">
-          <GIFComponent />
+          <GIFComponent gifName="app-market" />
         </b-col>
       </b-row>
       <b-row class="section2">
-        <b-col lg="5" class="text-start">
+        <b-col lg="6" class="text-start">
           <p class="header">
             كل ما تحتاجه لنمو متجرك فى مكان واحد
           </p>
           <p class="subheader">
-            مميزات سوق تطبيقات زد تساعدك فى سهولة وسرعة الاستفادة من خدمات وحلول سوف التطبيقات لنمو متجرك ومضاعفة ارباحك
+            مميزات سوق تطبيقات زد تساعدك فى سهولة وسرعة الاستفادة من خدمات وحلول سوق التطبيقات لنمو متجرك ومضاعفة ارباحك
           </p>
           <div class="advanages">
             <b-img 
@@ -82,11 +85,11 @@
           </div>
         </b-col>
         <b-col 
-          lg="7" 
+          lg="6" 
           cols="10" 
           class="pl-lg-5 pr-0 videoContainer section2VideoContainer"
         >
-          <GIFComponent :smallComponent="true" />
+          <GIFComponent :smallComponent="true" gifName="apps" />
         </b-col>
       </b-row>
       
@@ -96,6 +99,7 @@
           <p class="subheader">تطبيقات تقدم حلول وخدمات مميزة نوصى بها</p>
         </b-col>
         <b-col 
+          xl="2"
           lg="3" 
           md="6" 
           cols="12" 

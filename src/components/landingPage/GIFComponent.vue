@@ -1,30 +1,46 @@
 <template>
-  <div class="gifContainer">
-    <b-img 
-      :src="require(`@/assets/icons/dots.svg`)"
-      :class="['dots', {'smallComponentDots': smallComponent}]"
-    >
-    </b-img>
+  <div class="gifContainer mx-auto">
+    <b-row class="justify-content--center m-0">
+      <b-img 
+        :src="require(`@/assets/icons/dots.svg`)"
+        :class="['dots', {'smallComponentDots': smallComponent}]"
+      >
+      </b-img>
+      
+      <b-img 
+        :src="require(`@/assets/icons/circle.svg`)"
+        class="circle"
+      >
+      </b-img>
     
-    <b-img 
-      :src="require(`@/assets/icons/circle.svg`)"
-      class="circle"
-    >
-    </b-img>
-  
-    <b-img 
-      :src="require(`@/assets/imgs/app-market.gif`)"
-      class="appMarket"
-      :height="$props.smallComponent ? '375' : '550'"
-    >
-    </b-img>
+      <b-img 
+        :src="getGifUrl(gifName)"
+        :class="['gif' , {'small': smallComponent}]"
+      >
+      </b-img>
+    </b-row>
   </div>
 </template>
 
 <script>
   export default {
     name: 'GIFComponent',
-    props: ['smallComponent']
+    props: {
+      smallComponent: {
+        type: Boolean,
+        default: false
+      },
+      gifName: {
+        type: String,
+        default: "app-market"
+      }
+    },
+    methods: {
+      getGifUrl(gif) {
+        let images = require.context('../../assets/imgs/', false, /\.gif$/)
+        return images('./' + gif + ".gif")
+      }
+    }
   }
 </script>
 
@@ -33,11 +49,12 @@
   
   .gifContainer {
     position: relative;
+    max-width: 850px;
 
     .dots {
       position: absolute;
-      top: -42px;
-      left: -70px;
+      top: 0px;
+      left: 0px;
       z-index: 1;
     }
     
@@ -54,15 +71,33 @@
       height: 367px;
     }
     
-    .appMarket {
+    .gif {
       position: relative;
       margin-top: 46px !important;
-      width: 100%;
       border-radius: 40px;
       display: block;
       overflow: hidden;
       margin: auto;
       z-index: 100;
+      max-height: 500px;
+      height: 100%;
+      max-width: 700px;
+      width: 100%;
+    }
+    
+    
+    @media (min-width: 992px) {
+      .gif {
+        &.small {
+          min-height: 370px;
+        }
+      }
+    }
+    
+    @media (max-width: 991.98px) {
+      .dots {
+        left: -30px;
+      }
     }
     
     @media (max-width: 575px) {
