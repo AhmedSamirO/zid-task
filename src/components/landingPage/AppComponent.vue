@@ -1,12 +1,12 @@
 <template>
-  <b-row class="appContainer m-0">
-    <b-col cols="3" class="p-0">
+  <div class="appContainer d-flex">
+    <div class="appImage">
       <b-img 
         :src="require(`@/assets/imgs/qomra.png`)"
       >
       </b-img>
-    </b-col>
-    <b-col cols="9" class="p-0">
+    </div>
+    <div class="appDescription">
       <div>
         <p class="title">
           قمرة
@@ -30,11 +30,12 @@
       </div>
       
       <div>
-        <p class="appText">نظام الولاء الامثل الذى يمكنك من رفع مبيعاتك</p>
-        <p class="appText">نظام الولاء الامثل الذى يمكنك من رفع مبيعاتك</p>
+        <p class="appText">
+          نظام الولاء الامثل الذى يمكنك من رفع مبيعاتك نظام الولاء الامثل الذى يمكنك من رفع مبيعاتك
+        </p>
       </div>
-    </b-col>
-  </b-row>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -49,14 +50,21 @@
   .appContainer {
     background-color: #F7F7F7;
     border-radius: 10px;
-    padding: 10px;
+    padding: 29.59px 22.41px;
     text-align: start;
     
+    .appImage {
+      width: 45px;
+      height: 46px;
+    }
+    .appDescription {
+      padding-right: 10px;
+    }
     .title {
       font-weight: 600;
       font-size: 16px;
       color: $primary;
-      margin-bottom: 0;
+      margin-bottom: 10px;
       
       .starContainer {
         margin-right: 30px;
@@ -74,14 +82,12 @@
       margin-bottom: 20px;
     }
     .developerName {
-      font-size: 10px;
       color: rgba(0, 0, 0, 0.56);
     }
     .appText {
       font-weight: 400;
       font-size: 10px;
       color: $black;
-      margin-bottom: 20px;
       margin-bottom: 0;
       line-height: 24px;
     }

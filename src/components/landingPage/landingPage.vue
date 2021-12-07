@@ -43,14 +43,14 @@
         </b-col>
       </b-row>
       <b-row class="section2">
-        <b-col lg="6" class="text-start">
+        <b-col lg="6" class="text-start values">
           <p class="header">
             كل ما تحتاجه لنمو متجرك فى مكان واحد
           </p>
           <p class="subheader">
             مميزات سوق تطبيقات زد تساعدك فى سهولة وسرعة الاستفادة من خدمات وحلول سوق التطبيقات لنمو متجرك ومضاعفة ارباحك
           </p>
-          <div class="advanages">
+          <div class="value">
             <b-img 
               :src="require(`@/assets/icons/dashboard.svg`)"
               width="51"
@@ -60,7 +60,7 @@
             سهولة ادارة وتفعيل تطبيقات من نفس لوحة تحكم متجرك
           </div>
           
-          <div class="advanages">
+          <div class="value">
             <b-img 
               :src="require(`@/assets/icons/support.svg`)"
               width="51"
@@ -70,7 +70,7 @@
             دعم فنى وتقنى متكامل متوفر على مدار الساعة
           </div>
           
-          <div class="advanages smallAdvanage">
+          <div class="value smallValue">
             <b-img 
               :src="require(`@/assets/icons/money.svg`)"
               width="51"
@@ -80,14 +80,14 @@
             اسعار تنافسية مع تجربى مجانية وباقات اشتراك متنوعة
           </div>
           
-          <div>
+          <div class="viewApps">
             <ViewAppsButton />
           </div>
         </b-col>
         <b-col 
           lg="6" 
           cols="10" 
-          class="pl-lg-5 pr-0 videoContainer section2VideoContainer"
+          class="pr-0 videoContainer section2VideoContainer"
         >
           <GIFComponent :smallComponent="true" gifName="apps" />
         </b-col>
@@ -99,13 +99,12 @@
           <p class="subheader">تطبيقات تقدم حلول وخدمات مميزة نوصى بها</p>
         </b-col>
         <b-col 
-          xl="2"
           lg="3" 
           md="6" 
           cols="12" 
           v-for="number in 4" 
           :key="number"
-          class="p-3"
+          class="p-3 p-lg-0 pl-lg-4"
         >
           <AppComponent />
         </b-col>
@@ -195,6 +194,10 @@
       margin-bottom: 190px;
       padding-bottom: 65px;
       
+      .values {
+        padding-right: 100px;
+      }
+      
       .header {
         font-weight: 700;
         font-size: 24px;
@@ -207,27 +210,26 @@
       .subheader {
         font-weight: 400;
         font-size: 16px;
-        line-height: 24px;
+        line-height: 30px;
         color: $black;
         margin-bottom: 20px;
       }
-      .advanages {
+      .value {
         font-weight: 600;
         font-size: 14px;
         line-height: 24px;
         color: $black;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
       }
-      .smallAdvanage {
+      .smallValue {
         font-size: 12px;
       }
       .section2VideoContainer {
         margin-top: 20px;
         margin-bottom: 0;
       }
-      
-      @media (max-width: 992px) {
-        justify-content: center;
+      .viewApps {
+        margin-top: 40px;
       }
     }
     
@@ -236,7 +238,7 @@
         font-weight: 600;
         font-size: 24px;
         letter-spacing: -1px;
-        margin-bottom: 0;
+        margin-bottom: 10px;
       }
       .subheader {
         font-weight: 400;
@@ -250,6 +252,22 @@
       }
     }
     
+    @media (min-width: 992px) {
+      .section3 {
+        padding-left: 82px;
+        padding-right: 82px;
+      }
+      .section2VideoContainer {
+        padding-left: 30px;
+      }
+    }
+    
+    @media (max-width: 99.98px) {
+      .section2 {
+        justify-content: center;
+      }
+    }
+      
     @media (max-width: 575px) {
       h1 {
         font-size: 24px;
@@ -266,7 +284,7 @@
         .subheader {
           font-size: 15px;
         }
-        .advanages {
+        .value {
           font-size: 10px;
         }
       }

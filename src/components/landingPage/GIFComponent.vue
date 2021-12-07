@@ -1,6 +1,6 @@
 <template>
   <div class="gifContainer mx-auto">
-    <b-row class="justify-content--center m-0">
+    <b-row class="justify-content-center m-0">
       <b-img 
         :src="require(`@/assets/icons/dots.svg`)"
         :class="['dots', {'smallComponentDots': smallComponent}]"
@@ -79,17 +79,19 @@
       overflow: hidden;
       margin: auto;
       z-index: 100;
-      max-height: 550px;
+      max-height: 549.29px;
       height: 100%;
-      max-width: 846px;
+      max-width: 846.89px;
       width: 100%;
+      object-fit: cover;
     }
     
     
     @media (min-width: 992px) {
       .gif {
         &.small {
-          min-height: 370px;
+          width: 700.98px;
+          height: 441px;
         }
       }
     }
