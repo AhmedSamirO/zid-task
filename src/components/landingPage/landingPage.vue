@@ -93,13 +93,14 @@
         </b-col>
       </b-row>
       
-      <b-row class="justify-content-center section3">
+      <b-row class="section3">
         <b-col cols="12">
           <p class="header">التطبيقات المتميزة</p>
           <p class="subheader">تطبيقات تقدم حلول وخدمات مميزة نوصى بها</p>
         </b-col>
-        <b-col 
-          lg="3" 
+        <b-col
+          xl="3" 
+          lg="4" 
           md="6" 
           cols="12" 
           v-for="number in 4" 
@@ -194,10 +195,6 @@
       margin-bottom: 190px;
       padding-bottom: 65px;
       
-      .values {
-        padding-right: 100px;
-      }
-      
       .header {
         font-weight: 700;
         font-size: 24px;
@@ -260,11 +257,28 @@
       .section2VideoContainer {
         padding-left: 30px;
       }
+      .values {
+        padding-right: 100px;
+      }
     }
     
-    @media (max-width: 99.98px) {
+    @media (max-width: 991.98px) {
+      
+      
+    }
+    
+    @media (max-width: 767.98px) {
+      .videoContainer{
+        margin-bottom: 50px;
+      }
       .section2 {
         justify-content: center;
+        margin-bottom: 20px;
+      }
+      .section3 {
+        .subheader {
+          margin-bottom: 10px;
+        }
       }
     }
       
@@ -285,7 +299,7 @@
           font-size: 15px;
         }
         .value {
-          font-size: 10px;
+          font-size: 11px;
         }
       }
     }
